@@ -39,4 +39,4 @@ async def consumo(ctx):
 async def sprecoalimenti(ctx):
     await ctx.send("Riduci lo spreco alimentare🍽️: compra solo ciò che ti serve, conserva bene il cibo e consuma gli avanzi. Lo spreco alimentare contribuisce alle emissioni di metano ")
 
-bot.run("MTM3NTQ2NjI2OTAzMzIzNDU5NA.Gxn9du.dAlYInXFHfTj2NbnLd6jBxEJl2JjS26CugUKCg")
+bot.run("TOKEN")
