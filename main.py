@@ -10,6 +10,24 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 async def on_ready():
     print(f'Abbiamo fatto l\'accesso come {bot.user}')
 
+@bot.command(name="comandi")
+async def mostra_comandi(ctx):
+    help_message = """
+**– Comandi disponibili:**
+
+`!trasporti` – Consiglio su mezzi sostenibili  
+`!ridurreriusarericiclare` – Consiglio sul riciclo e riduzione rifiuti  
+`!cibo` – Suggerimento per evitare lo spreco alimentare  
+`!acqua` – Come risparmiare acqua  
+`!casa` – Consigli per risparmiare energia e migliorare la casa  
+`!consumo` – Scelte di consumo sostenibile  
+`!sprecoalimenti` – Altro consiglio sullo spreco di cibo  
+`!comandi` – Mostra questo elenco
+
+💡 Digita uno di questi comandi nel server per ricevere un consiglio utile!
+"""
+    await ctx.send(help_message)
+
 @bot.command()
 async def trasporti(ctx):
     await ctx.send("Scegli trasporti sostenibili🌿: riduci l'uso dell'auto privata optando per mezzi pubblici, bicicletta o camminate. Se possibile, considera l'acquisto di un veicolo elettrico. Il settore dei trasporti è responsabile di circa il 30% delle emissioni di gas serra.")
